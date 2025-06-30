@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>משחק פעלים: סביל ופעיל</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎯 משחק פעלים: סביל ופעיל</h1>
+            <p class="subtitle">זהה את סוג הפועל וכתוב את ההפך שלו</p>
+        </header>
+
+        <div class="game-area">
+            <div class="score-board">
+                <div class="score">
+                    <span>נכונות: </span>
+                    <span id="correct-score">0</span>
+                </div>
+                <div class="score">
+                    <span>שגויות: </span>
+                    <span id="wrong-score">0</span>
+                </div>
+                <div class="score">
+                    <span>סה"כ: </span>
+                    <span id="total-score">0</span>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="verb-display">
+                    <h2 id="current-verb">טוען קבצים...</h2>
+                    <p class="verb-type" id="verb-type-hint">זהה: האם זה פועל פעיל או סביל?</p>
+                </div>
+
+                <div class="buttons-row">
+                    <button class="choice-btn active-btn" id="active-btn">פעיל</button>
+                    <button class="choice-btn passive-btn" id="passive-btn">סביל</button>
+                </div>
+
+                <div class="input-section" id="input-section" style="display: none;">
+                    <label for="opposite-verb">כתוב את ההפך:</label>
+                    <input type="text" id="opposite-verb" placeholder="הכנס את הפועל ההפוך...">
+                    <button class="submit-btn" id="submit-btn">בדוק תשובה</button>
+                </div>
+
+                <div class="feedback" id="feedback"></div>
+
+                <button class="next-btn" id="next-btn" style="display: none;">שאלה הבאה</button>
+            </div>
+
+            <div class="progress">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+                <p>שאלה <span id="question-number">1</span> מתוך <span id="total-questions">10</span></p>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <h3>📋 הוראות המשחק:</h3>
+            <ol>
+                <li>קרא את הפועל שמופיע</li>
+                <li>בחר האם זה פועל פעיל או סביל</li>
+                <li>כתוב את הפועל ההפוך (אם זה פעיל - כתוב סביל, ולהיפך)</li>
+                <li>לחץ "בדוק תשובה" וראה אם צדקת!</li>
+            </ol>
+        </div>
+
+        <footer>
+            <p>נוצר על ידי נב גל למורי העברית 💙</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
