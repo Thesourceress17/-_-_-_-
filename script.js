@@ -13,7 +13,7 @@ const verbPairs = [
     { active: "נכתב", passive: "כותב", type: "passive" },
     { active: "נקרא", passive: "קורא", type: "passive" },
     { active: "נבנה", passive: "בונה", type: "passive" },
-    { active: "נמצא", passive: "מציא", type: "passive" },
+    { active: "נמצא", passive: "מצא", type: "passive" },
     { active: "נאכל", passive: "אוכל", type: "passive" },
     { active: "נשבר", passive: "שובר", type: "passive" },
     { active: "נפתח", passive: "פותח", type: "passive" },
